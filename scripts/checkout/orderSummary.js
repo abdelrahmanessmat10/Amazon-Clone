@@ -1,4 +1,4 @@
-import { cart, deleteFromCart, updateDeliveryOption, updateQuantity } from '../../data/cart.js';
+import { cart, deleteFromCart, updateDeliveryOption, updateQuantity, calculateCartQuantity } from '../../data/cart.js';
 import { products, getProduct } from '../../data/products.js';
 import { formatCurrency } from '../utils/money.js'
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js'
@@ -80,6 +80,8 @@ export function renderOrderSummary() {
     `;
   });
 
+  document.querySelector('.js-return-to-home-link').innerHTML = `${calculateCartQuantity()} items`;
+
   document.querySelector('.js-order-summary').innerHTML = cartSummaryHTML;
 
 
@@ -113,6 +115,7 @@ export function renderOrderSummary() {
 
       const quantityLabel = document.querySelector(`.js-quantity-label-${productId}`);
       quantityLabel.innerHTML = newQuantity;
+      document.querySelector('.js-return-to-home-link').innerHTML = `${calculateCartQuantity()} items`;
 
       renderPaymentSummary();
     });
@@ -159,6 +162,7 @@ export function renderOrderSummary() {
     link.addEventListener('click', () => {
       const productId = link.dataset.productId;
       deleteFromCart(productId);
+      document.querySelector('.js-return-to-home-link').innerHTML = `${calculateCartQuantity()} items`;
 
 
 
