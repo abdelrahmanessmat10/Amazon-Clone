@@ -4,7 +4,7 @@ This is a comprehensive, responsive Amazon clone built with vanilla HTML, CSS, a
 
 ## 🚀 Features Implemented
 
-### 1. Main Storefront (`amazon.html`)
+### 1. Main Storefront (`index.html`)
 - **Product Display**: Dynamically renders products fetched from a backend API using JavaScript template literals.
 - **Interactive Search Bar**: Users can search for products by name or keywords. The search works globally across all pages and accurately filters the homepage view. If no products are found, an empty state message is shown.
 - **Cart Management**: Users can select quantities and add items to their cart. The cart quantity indicator updates seamlessly in the header.
@@ -44,4 +44,4 @@ This is a comprehensive, responsive Amazon clone built with vanilla HTML, CSS, a
 ## 🏃 How to Run
 1. Since the project uses ES6 Modules (`import`/`export`), it needs to be run on a local development server (like VS Code Live Server). 
 2. Open the project in your editor.
-3. Start the Live Server and navigate to `amazon.html`.
+3. Start the Live Server and navigate to `index.html`.
