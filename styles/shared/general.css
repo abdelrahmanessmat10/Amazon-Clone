@@ -6,6 +6,25 @@ body {
   margin: 0;
 }
 
+/* GitHub Pages Educational Disclaimer Banner */
+.educational-disclaimer-banner {
+  background-color: #232f3e;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+  border-bottom: 3px solid #ff9900;
+  position: relative;
+  z-index: 1100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.educational-disclaimer-banner strong {
+  color: #ff9900;
+  font-weight: 700;
+}
+
 /* <p> elements have a default margin on the top
    and bottom. This removes the default margins. */
 p {

@@ -1,5 +1,7 @@
 # Amazon Clone Project
 
+> ⚠️ **DISCLAIMER:** THIS REPOSITORY AND PAGE WAS MADE AS A PERSONAL EDUCATIONAL PROJECT. This is NOT the official site of Amazon. The creator of this page is NOT affiliated with the company or brand in any way. This project was made strictly in connection with an educational exercise and does not collect any user data.
+
 This is a comprehensive, responsive Amazon clone built with vanilla HTML, CSS, and JavaScript. This project focuses on demonstrating modern JavaScript practices, Object-Oriented Programming (OOP), asynchronous data fetching, and automated testing.
 
 ## 🚀 Features Implemented
